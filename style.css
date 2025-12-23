@@ -126,17 +126,24 @@ h2 {
     background: #23272a;
     border-radius: 8px;
     margin-bottom: 16px;
-    padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+.sidebar .social-links {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
 }
-
-.project-list h3 {
-    margin: 0 0 6px 0;
-    font-size: 1.1rem;
-    color: #fff;
+.sidebar .social-links a {
+    color: #b0b3b8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    background: none;
+    padding: 4px 0;
 }
-
-.project-list a {
+.sidebar .social-links a:hover {
+    color: #3b82f6;
+}
     color: #3b82f6;
     text-decoration: underline;
     font-size: 0.98rem;
