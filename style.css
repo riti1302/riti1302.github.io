@@ -2,28 +2,30 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #e5e7eb;
-    color: #222;
+    background: #181a1b;
+    color: #e5e7eb;
 }
 
 .layout {
     display: flex;
-    max-width: 900px;
+    flex-direction: column;
+    max-width: 1000px;
     margin: 40px auto;
-    background: #fff;
+    background: #23272a;
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
     overflow: hidden;
 }
 
 .sidebar {
-    background: #f3f7fa;
+    background: #23272a;
     width: 260px;
     padding: 36px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid #e0e0e0;
+    border-right: 1px solid #23272a;
+    min-height: 400px;
 }
 
 .profile-pic {
@@ -32,16 +34,17 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 18px;
-    border: 3px solid #0077cc22;
+    border: 3px solid #3b82f6;
 }
 
 .sidebar h1 {
     font-size: 1.5rem;
     margin: 0 0 8px 0;
+    color: #fff;
 }
 
 .sidebar .subtitle {
-    color: #666;
+    color: #b0b3b8;
     font-size: 1rem;
     margin-bottom: 18px;
     text-align: center;
@@ -53,14 +56,14 @@ body {
 
 .sidebar .social-links a {
     margin: 0 8px;
-    color: #444;
+    color: #b0b3b8;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.2s;
 }
 
 .sidebar .social-links a:hover {
-    color: #0077cc;
+    color: #3b82f6;
 }
 
 .content {
@@ -68,26 +71,40 @@ body {
     padding: 36px 32px 16px 32px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 32px;
+
+.topbar {
+    width: 100%;
+    background: #181a1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 64px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #23272a;
 }
 
-nav {
-    margin-top: 12px;
+.topbar .nav {
+    display: flex;
+    gap: 24px;
 }
 
-nav a {
-    color: #0077cc;
+.topbar .nav a {
+    color: #e5e7eb;
     text-decoration: none;
-    margin: 0 12px;
     font-weight: 500;
-    transition: color 0.2s;
+    font-size: 1.08rem;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s, color 0.2s;
 }
 
-nav a:hover {
-    color: #005fa3;
+.topbar .nav a:hover, .topbar .nav a.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
 }
+
+
 
 main section {
     margin-bottom: 36px;
@@ -95,9 +112,10 @@ main section {
 
 h2 {
     font-size: 1.4rem;
-    color: #0077cc;
+    color: #3b82f6;
     margin-bottom: 10px;
 }
+
 
 .project-list {
     list-style: none;
@@ -105,23 +123,25 @@ h2 {
 }
 
 .project-list li {
-    background: #f3f7fa;
+    background: #23272a;
     border-radius: 8px;
     margin-bottom: 16px;
     padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
 .project-list h3 {
     margin: 0 0 6px 0;
     font-size: 1.1rem;
+    color: #fff;
 }
 
 .project-list a {
-    color: #0077cc;
+    color: #3b82f6;
     text-decoration: underline;
     font-size: 0.98rem;
 }
+
 
 .social-links {
     margin-top: 10px;
@@ -129,19 +149,19 @@ h2 {
 
 .social-links a {
     margin-right: 16px;
-    color: #444;
+    color: #b0b3b8;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.2s;
 }
 
 .social-links a:hover {
-    color: #0077cc;
+    color: #3b82f6;
 }
 
 footer {
     text-align: center;
-    color: #aaa;
+    color: #b0b3b8;
     font-size: 0.95rem;
     margin-top: 24px;
     padding-bottom: 8px;
@@ -152,10 +172,20 @@ footer {
         flex-direction: column;
         max-width: 98vw;
     }
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 12px 10px;
+    }
+    .topbar .nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
     .sidebar {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid #23272a;
     }
     .content {
         padding: 24px 10px 10px 10px;
