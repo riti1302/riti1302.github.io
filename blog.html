@@ -11,7 +11,6 @@
     <div class="layout">
         <div class="topbar">
             <div style="display: flex; align-items: center; gap: 16px;">
-                <span style="font-size:1.3rem;color:#fff;font-weight:600;">Ritika</span>
             </div>
             <nav class="nav">
                 <a href="index.html">About</a>
@@ -56,30 +55,25 @@
             <div class="content">
                 <main>
                     <section id="blog">
+                        <style>
+                        /* Add 3em margin between h2 and h3, and 2em between h3 and h3 in #blog */
+                        #blog h2 {
+                            margin-bottom: 3em;
+                        }
+                        #blog h3 {
+                            margin-top: 0;
+                            margin-bottom: 2em;
+                        }
+                        #blog h3:last-of-type {
+                            margin-bottom: 0;
+                        }
+                        </style>
                         <h2>Blogs</h2>
-                        <style>
-                        /* add space after the main header and after every other h3 */
-                        #blog h2 { margin-bottom: 1.5rem; }
-                        #blog h3 { margin: 0; }
-                        #blog h3:nth-of-type(odd) { margin-bottom: 1rem; }
-                        </style>
-                        <style>
-                        /* override default blue links in the blog section */
-                        #blog h3 a,
-                        #blog a {
-                            color: #dae7ef !important; /* change to the color you want */
-                            text-decoration: none;
-                        }
-                        #blog h3 a:hover,
-                        #blog a:hover {
-                            color: #dae7ef !important;
-                            text-decoration: underline;
-                        }
-                        </style>
-                        <h3 style="color: #dae7ef;"><a href="https://medium.com/@ritikakumari1302/brief-introduction-to-ml-for-trading-aade481c98fa" target="_blank">Brief Introduction to ML for Trading</a></h3>
-                        <h3 style="color: #dae7ef;"><a href="https://medium.com/@ritikakumari1302/serving-smashing-starting-over-29049a3e7118" target="_blank">Serving, Smashing & Starting Over</a></h3>
-                        <h3 style="color: #dae7ef;"><a href="https://medium.com/@ritikakumari1302/computational-graphs-and-automatic-differentiation-b5404b5fbaa3" target="_blank">Computational Graphs and Automatic Differentiation</a></h3>
-                        <h3 style="color: #dae7ef;"><a href="https://medium.com/@ritikakumari1302/knowledge-graphs-how-to-build-from-text-c2353570a9e4" target="_blank">Knowledge Graphs: How to build from text</a></h3>
+                        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 2em 0;" />
+                        <h3 style="color: #1696ec;"><a href="https://medium.com/@ritikakumari1302/brief-introduction-to-ml-for-trading-aade481c98fa" target="_blank">Brief Introduction to ML for Trading</a></h3>
+                        <h3 style="color: #1696ec;"><a href="https://medium.com/@ritikakumari1302/serving-smashing-starting-over-29049a3e7118" target="_blank">Serving, Smashing & Starting Over</a></h3>
+                        <h3 style="color: #1696ec;"><a href="https://medium.com/@ritikakumari1302/computational-graphs-and-automatic-differentiation-b5404b5fbaa3" target="_blank">Computational Graphs and Automatic Differentiation</a></h3>
+                        <h3 style="color: #1696ec;"><a href="https://medium.com/@ritikakumari1302/knowledge-graphs-how-to-build-from-text-c2353570a9e4" target="_blank">Knowledge Graphs: How to build from text</a></h3>
                     </section>
                 </main>
                 <footer>
