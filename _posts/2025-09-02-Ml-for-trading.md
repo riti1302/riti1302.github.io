@@ -1,0 +1,11 @@
+---
+title: 'Brief Introduction to ML for Trading'
+date: 2025-09-02
+tags:
+  - machine learning
+  - trading
+  - statistics
+medium_url: 'https://medium.com/example-ml-for-trading'
+
+---
+This summer I took a fascinating course — Machine Learning for Trading. For those who don’t know me, I’m pursuing my Master’s in Computer Science with a specialization in Machine Learning. Every semester, I like to reflect on what I’ve learned and share it in an abstract yet informative way. If you have even a little familiarity with Machine Learning and math concepts, you’ll find this article easy to follow.
