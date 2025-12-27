@@ -188,60 +188,46 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .layout {
-        flex-direction: column;
-        max-width: 100vw;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    .topbar {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 12px 10px;
-        border-radius: 0;
-    }
-    .topbar .nav {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .sidebar {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 16px 8px;
-        min-height: unset;
-        border-right: none;
-        border-bottom: 1px solid #23272a;
-    }
-    .sidebar .profile-pic {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 0;
-        margin-right: 12px;
-    }
-    .sidebar h1, .sidebar .subtitle {
-        text-align: left;
-        margin: 0 0 4px 0;
-    }
-    .sidebar .social-links {
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        margin-top: 0;
-        margin-left: 10px;
-    }
-    .sidebar .social-links a {
-        font-size: 0.9rem;
-    }
-    .content {
-        padding: 16px 6px 8px 6px;
-    }
-    h2 {
-        font-size: 1.1rem;
-    }
+        .layout {
+                flex-direction: column;
+                max-width: 98vw;
+        }
+        .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                padding: 12px 10px;
+        }
+        .topbar .nav {
+                flex-wrap: wrap;
+                gap: 12px;
+        }
+        .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #23272a;
+        }
+        .content {
+                padding: 24px 10px 10px 10px;
+        }
+}
+
+html {
+    font-size: clamp(14px, 2.5vw, 18px);
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+h2 {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
+h3 {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+}
+
+.sidebar .subtitle, .sidebar .social-links a span {
+    font-size: clamp(0.85rem, 2vw, 0.98rem) !important;
 }
