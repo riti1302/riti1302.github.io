@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Books"
+permalink: /teaching/
+author_profile: true
+---
+I enjoy reading quite a lot. Even if I can’t always find as much time for it as I’d like, I try to make room for it whenever possible. I also enjoy discussing what I read, and this space consists of my very original reviews.
+
+{% include base_path %}
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}

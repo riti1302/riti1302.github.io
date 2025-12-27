@@ -1,0 +1,7 @@
+---
+title: 'Americanah'
+
+---
+This book dives into some mainstream ideas such as the hardships of immigrants, navigating the challenges of being a different race in first-world countries, and the innocence of teenage love. It does a pretty good job showing the struggles of immigration and showcasing racism in a simple and not so subtle ways, but I got really hooked on the romance part of it. The first half is all about immigration, racism and other things, but the real love story kicks in during the second half. When I hit that second half, I was buzzing with excitement, wondering where the story would twist next.
+
+The ending was kind of predictable, but it took me a while to come to terms with it. You see, in a world where we don't stumble upon great love stories every day, I was hoping for something more extraordinary in this book. Don't get me wrong, I get the need for keeping things real so people can relate. Despite my discontent with the protagonist, I was still rooting for a more satisfying ending for them. It stings a bit to think about how in love, we can overlook things that shouldn't be forgiven. Is it truly love or just desperation to keep that person in your life? Most of the time, it's desperation, but in those rare moments when it's not, love can truly be blind.
