@@ -1,1 +1,22 @@
-Create Jekyll default layout with responsive meta tag and includes for topbar and sidebar.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  {%- seo -%}
+</head>
+<body>
+  {% include topbar.html %}
+  <div class="layout">
+    {% include sidebar.html %}
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+  <footer>
+    &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+  </footer>
+</body>
+</html>
