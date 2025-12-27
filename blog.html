@@ -1,76 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog ~ Ritika</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/profile_pic.JPG">
-</head>
-<body>
-    <div class="layout">
-        <div class="topbar">
-            <div style="display: flex; align-items: center; gap: 16px;">
-            </div>
-            <nav class="nav">
-                <a href="index.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="travel.html">Travel</a>
-                <a href="reading.html">Reading</a>
-            </nav>
-        </div>
-        <div style="display:flex;">
-            <aside class="sidebar">
-                <img src="images/profile_pic.JPG" class="profile-pic">
-                <h1>Ritika Kumari</h1>
-                <p class="subtitle" style="font-size:0.92rem;">Machine Learning Engineer</p>
-                <div class="social-links">
-                    <a href="mailto:ritikakumari1302@gmail.com" target="_blank" rel="noopener">
-                        <img src="images/email.png" alt="Email" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Email</span>
-                    </a>
-                    <a href="https://medium.com/@ritikakumari1302" target="_blank" rel="noopener">
-                        <img src="images/medium.png" alt="Medium" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Medium</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/riti1302" target="_blank" rel="noopener">
-                        <img src="images/linkedin.png" alt="LinkedIn" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/riti1302" target="_blank" rel="noopener">
-                        <img src="images/github.png" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">GitHub</span>
-                    </a>
-                </div>
-            </aside>
-            <div class="content">
-                <main>
-                    <section id="blog">
-                        <style>
-                        /* Add 3em margin between h2 and h3, and 2em between h3 and h3 in #blog. Set h3 color to #1696ec. */
-                        #blog h3 {
-                            margin-top: 0;
-                            margin-bottom: 2em;
-                            color: #1696ec;
-                        }
-                        #blog h3:last-of-type {
-                            margin-bottom: 0;
-                        }
-                        </style>
-                        <h2>Blogs</h2>
-                        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
-                        <h3><a href="https://medium.com/@ritikakumari1302/brief-introduction-to-ml-for-trading-aade481c98fa" target="_blank">Brief Introduction to ML for Trading</a></h3>
-                        <h3><a href="https://medium.com/@ritikakumari1302/serving-smashing-starting-over-29049a3e7118" target="_blank">Serving, Smashing & Starting Over</a></h3>
-                        <h3><a href="https://medium.com/@ritikakumari1302/computational-graphs-and-automatic-differentiation-b5404b5fbaa3" target="_blank">Computational Graphs and Automatic Differentiation</a></h3>
-                        <h3><a href="https://medium.com/@ritikakumari1302/knowledge-graphs-how-to-build-from-text-c2353570a9e4" target="_blank">Knowledge Graphs: How to build from text</a></h3>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2025 Ritika. All rights reserved.</p>
-                </footer>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Blog
+---
+
+{% include topbar.html %}
+<div class="layout">
+  {% include sidebar.html %}
+  <div class="content">
+    <main>
+      <section id="blog">
+        <style>
+        /* Add 3em margin between h2 and h3, and 2em between h3 and h3 in #blog. Set h3 color to #1696ec. */
+        #blog h3 {
+            margin-top: 0;
+            margin-bottom: 2em;
+            color: #1696ec;
+        }
+        #blog h3:last-of-type {
+            margin-bottom: 0;
+        }
+        </style>
+        <h2>Blogs</h2>
+        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
+        <h3><a href="https://medium.com/@ritikakumari1302/brief-introduction-to-ml-for-trading-aade481c98fa" target="_blank">Brief Introduction to ML for Trading</a></h3>
+        <h3><a href="https://medium.com/@ritikakumari1302/serving-smashing-starting-over-29049a3e7118" target="_blank">Serving, Smashing & Starting Over</a></h3>
+        <h3><a href="https://medium.com/@ritikakumari1302/computational-graphs-and-automatic-differentiation-b5404b5fbaa3" target="_blank">Computational Graphs and Automatic Differentiation</a></h3>
+        <h3><a href="https://medium.com/@ritikakumari1302/knowledge-graphs-how-to-build-from-text-c2353570a9e4" target="_blank">Knowledge Graphs: How to build from text</a></h3>
+      </section>
+    </main>
+  </div>
+</div>
+<footer>
+  &copy; {{ site.time | date: '%Y' }} Ritika Kumari
+</footer>

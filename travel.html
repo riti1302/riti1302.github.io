@@ -1,62 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel ~ Ritika</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/profile_pic.JPG">
-</head>
-<body>
-    <div class="layout">
-        <div class="topbar">
-            <div style="display: flex; align-items: center; gap: 16px;">
-            </div>
-            <nav class="nav">
-                <a href="index.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="travel.html">Travel</a>
-                <a href="reading.html">Reading</a>
-            </nav>
-        </div>
-        <div style="display:flex;">
-            <aside class="sidebar">
-                <img src="images/profile_pic.JPG" class="profile-pic">
-                <h1>Ritika Kumari</h1>
-                <p class="subtitle" style="font-size:0.92rem;">Machine Learning Engineer</p>
-                <div class="social-links">
-                    <a href="mailto:ritikakumari1302@gmail.com" target="_blank" rel="noopener">
-                        <img src="images/email.png" alt="Email" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Email</span>
-                    </a>
-                    <a href="https://medium.com/@ritikakumari1302" target="_blank" rel="noopener">
-                        <img src="images/medium.png" alt="Medium" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Medium</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/riti1302" target="_blank" rel="noopener">
-                        <img src="images/linkedin.png" alt="LinkedIn" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/riti1302" target="_blank" rel="noopener">
-                        <img src="images/github.png" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">GitHub</span>
-                    </a>
-                </div>
-            </aside>
-            <div class="content">
-                <main>
-                    <section id="travel">
-                        <h2>Travel</h2>
-                        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
-                        <p>I love traveling, perhaps a little too much, and I try to document at least one interesting or unique experience from every place I go.</p>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2025 Ritika. All rights reserved.</p>
-                </footer>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Travel
+---
+
+{% include topbar.html %}
+<div class="layout">
+  {% include sidebar.html %}
+  <div class="content">
+    <main>
+      <section>
+        <h2>Travel</h2>
+        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
+        <p>I love traveling, perhaps a little too much, and I try to document at least one interesting or unique experience from every place I go.</p>
+        <!-- Add your travel content here -->
+      </section>
+    </main>
+  </div>
+</div>
+<footer>
+  &copy; {{ site.time | date: '%Y' }} Ritika Kumari
+</footer>

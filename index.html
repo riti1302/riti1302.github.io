@@ -1,66 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritika ~ Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/profile_pic.JPG">
-</head>
-<body>
-    <div class="layout">
-        <div class="topbar">
-            <div style="display: flex; align-items: center; gap: 16px;">
-            </div>
-            <nav class="nav">
-                <a href="index.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="travel.html">Travel</a>
-                <a href="reading.html">Reading</a>
-            </nav>
-        </div>
-        <div style="display:flex;">
-            <aside class="sidebar">
-                <img src="images/profile_pic.JPG" class="profile-pic">
-                <h1>Ritika Kumari</h1>
-                <p class="subtitle" style="font-size:0.92rem;">Machine Learning Engineer</p>
-                <div class="social-links">
-                    <a href="mailto:ritikakumari1302@gmail.com" target="_blank" rel="noopener">
-                        <img src="images/email.png" alt="Email" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Email</span>
-                    </a>
-                    <a href="https://medium.com/@ritikakumari1302" target="_blank" rel="noopener">
-                        <img src="images/medium.png" alt="Medium" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Medium</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/riti1302" target="_blank" rel="noopener">
-                        <img src="images/linkedin.png" alt="LinkedIn" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/riti1302" target="_blank" rel="noopener">
-                        <img src="images/github.png" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">GitHub</span>
-                    </a>
-                </div>
-            </aside>
-            <div class="content">
-                <main>
-                    <section id="home">
-                        <h2>Know Me</h2>
-                        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
-                        <p>Hello. Hi. If you’re here to get to know me, you’ve come to the right place. For the serious stuff, like my work as a Machine Learning Engineer, you can check out my professional background neatly packed into my <a href="Resume.pdf" target="_blank" style="color:#3b82f6;font-weight:500;text-decoration:underline;">Resume</a>.</p>
-                        <p style="margin-top: 1em;"></p>
-                        <p>Now for the non-serious stuff. I like doing a lot of things. I travel, read, cook, sing, and, above all, I like to play. Most often, that means badminton (I’m decently good at it). I also play volleyball (not as good anymore, but I enjoy it nonetheless). And I’m learning squash, at my own pace.</p>
-                        <p>Sometimes I write. I don’t think I’m very good at it, but I try.</p>
-                        <p>After working as an ML Engineer for 4 years, I'm now doing my masters from Georgia Tech. It is fun. Will recommend 10/10.</p>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2025 Ritika Kumari. All rights reserved.</p>
-                </footer>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+{% include topbar.html %}
+<div class="layout">
+  {% include sidebar.html %}
+  <div class="content">
+    <main>
+      <section>
+        <h2>Welcome to My Website</h2>
+        <p>This is the Jekyll-powered, mobile-friendly personal site of Ritika Kumari.</p>
+      </section>
+      <section id="home">
+        <h2>Know Me</h2>
+        <hr style="border: none; border-top: 1.5px solid #b0b3b8; margin: 0 0 3em 0;" />
+        <p>Hello. Hi. If you’re here to get to know me, you’ve come to the right place. For the serious stuff, like my work as a Machine Learning Engineer, you can check out my professional background neatly packed into my <a href="Resume.pdf" target="_blank" style="color:#3b82f6;font-weight:500;text-decoration:underline;">Resume</a>.</p>
+        <p style="margin-top: 1em;"></p>
+        <p>Now for the non-serious stuff. I like doing a lot of things. I travel, read, cook, sing, and, above all, I like to play. Most often, that means badminton (I’m decently good at it). I also play volleyball (not as good anymore, but I enjoy it nonetheless). And I’m learning squash, at my own pace.</p>
+        <p>Sometimes I write. I don’t think I’m very good at it, but I try.</p>
+        <p>After working as an ML Engineer for 4 years, I'm now doing my masters from Georgia Tech. It is fun. Will recommend 10/10.</p>
+      </section>
+    </main>
+  </div>
+</div>
+<footer>
+  &copy; {{ site.time | date: '%Y' }} Ritika Kumari
+</footer>

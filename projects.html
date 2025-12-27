@@ -1,75 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project ~ Ritika</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/profile_pic.JPG">
-</head>
-<body>
-    <div class="layout">
-        <div class="topbar">
-            <div style="display: flex; align-items: center; gap: 16px;">
-            </div>
-            <nav class="nav">
-                <a href="index.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="travel.html">Travel</a>
-                <a href="reading.html">Reading</a>
-            </nav>
-        </div>
-        <div style="display:flex;">
-            <aside class="sidebar">
-                <img src="images/profile_pic.JPG" class="profile-pic">
-                <h1>Ritika Kumari</h1>
-                <p class="subtitle" style="font-size:0.92rem;">Machine Learning Engineer</p>
-                <div class="social-links">
-                    <a href="mailto:ritikakumari1302@gmail.com" target="_blank" rel="noopener">
-                        <img src="images/email.png" alt="Email" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Email</span>
-                    </a>
-                    <a href="https://medium.com/@ritikakumari1302" target="_blank" rel="noopener">
-                        <img src="images/medium.png" alt="Medium" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">Medium</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/riti1302" target="_blank" rel="noopener">
-                        <img src="images/linkedin.png" alt="LinkedIn" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/riti1302" target="_blank" rel="noopener">
-                        <img src="images/github.png" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:8px;filter: grayscale(1) brightness(1.2);">
-                        <span style="font-size:0.92rem;">GitHub</span>
-                    </a>
-                </div>
-            </aside>
-            <div class="content">
-                <main>
-                    <section id="projects">
-                        <h2> Projects</h2>
-                        <hr>
-                        <h3 style="color: #1696ec;">Flexible LLM Inference with Multi Model Prefill and Decode</h3>
-                        <p>Implemented a stitched LLM architecture using separate models for prefill and decode phases, improving both TTFT and TBT while maintaining model accuracy. Achieved 5% decrease in latency than the baseline model (using same bigger model in both the phases). Tested out generalization capability for the architecture on different tasks (q/a, summarization, code completion, math problems)</p>
+---
+layout: default
+title: Projects
+---
 
-                        <h3 style="color: #1696ec;">Physics-Informed Neural Network for Aerodynamic Analysis</h3>
-                        <p>Built a PyTorch-based point-wise neural network with physics-informed loss constraints that maps spatial coordinates and design parameters to aerodynamic flow fields. Transformed a data-limited problem (500 configurations) into 35M training samples through pointwise prediction, achieving fast surrogate modeling for CFD simulations with R² > 0.95.</p>
+{% include topbar.html %}
+<div class="layout">
+  {% include sidebar.html %}
+  <div class="content">
+    <main>
+      <section id="projects">
+        <h2> Projects</h2>
+        <hr>
+        <h3 style="color: #1696ec;">Flexible LLM Inference with Multi Model Prefill and Decode</h3>
+        <p>Implemented a stitched LLM architecture using separate models for prefill and decode phases, improving both TTFT and TBT while maintaining model accuracy. Achieved 5% decrease in latency than the baseline model (using same bigger model in both the phases). Tested out generalization capability for the architecture on different tasks (q/a, summarization, code completion, math problems)</p>
 
-                        <h3 style="color: #1696ec;">Keyword Based Extraction of Library Resources</h3>
-                        <p>Developed an end-to-end pipeline to find relevant books/journals from the database given 4-5 keywords. Winner solution at Smart India Hackathon 2019 and the solution is set up in PD Hinduja Hospital and Research Center.</p>
+        <h3 style="color: #1696ec;">Physics-Informed Neural Network for Aerodynamic Analysis</h3>
+        <p>Built a PyTorch-based point-wise neural network with physics-informed loss constraints that maps spatial coordinates and design parameters to aerodynamic flow fields. Transformed a data-limited problem (500 configurations) into 35M training samples through pointwise prediction, achieving fast surrogate modeling for CFD simulations with R² > 0.95.</p>
 
-                        <h3 style="color: #1696ec;">Correction of Annotation Affected Words in Document Images</h3>
-                        <p>Worked on removal of annotations from scanned document images using advanced computer vision techniques. Built a spelling correction model for correction of sentences extracted from the OCR with a bleu score 10.64</p>
-                        
-                        <h3 style="color: #1696ec;">Hydra: A Zombie Survivor Game</h3>
-                        <p>Developed a multiplayer game using Unity and C# where players must survive against waves of zombies. Implemented features like player customization, weapon upgrades, and a dynamic environment that changes based on player actions. Check out the trailer <a href="https://www.youtube.com/watch?v=_AGkpqnPsUE" target="_blank" rel="noopener">here.</a></p>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2025 Ritika Kumari. All rights reserved.</p>
-                </footer>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+        <h3 style="color: #1696ec;">Keyword Based Extraction of Library Resources</h3>
+        <p>Developed an end-to-end pipeline to find relevant books/journals from the database given 4-5 keywords. Winner solution at Smart India Hackathon 2019 and the solution is set up in PD Hinduja Hospital and Research Center.</p>
+
+        <h3 style="color: #1696ec;">Correction of Annotation Affected Words in Document Images</h3>
+        <p>Worked on removal of annotations from scanned document images using advanced computer vision techniques. Built a spelling correction model for correction of sentences extracted from the OCR with a bleu score 10.64</p>
+        
+        <h3 style="color: #1696ec;">Hydra: A Zombie Survivor Game</h3>
+        <p>Developed a multiplayer game using Unity and C# where players must survive against waves of zombies. Implemented features like player customization, weapon upgrades, and a dynamic environment that changes based on player actions. Check out the trailer <a href="https://www.youtube.com/watch?v=_AGkpqnPsUE" target="_blank" rel="noopener">here.</a></p>
+      </section>
+    </main>
+  </div>
+</div>
+<footer>
+  &copy; {{ site.time | date: '%Y' }} Ritika Kumari
+</footer>
