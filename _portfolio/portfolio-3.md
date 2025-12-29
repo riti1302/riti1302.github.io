@@ -1,9 +1,0 @@
----
-title: "Helsinki, Finland"
-excerpt: "TThe Finnish Sauna and the cutest cafe - Cafe Regatta.<br/>Take a guess which country has the largest number of Saunas in the world. Yeah right, finnish people are crazy about saunas. And fairly so. The sauna experience in Fin is unlike anywhere else. There is this Nordic wellness tradition where you stay in sauna for about 20 mins and then immediately go out and take a dip in the Baltic Sea, which is around 2°C. The dopamine hit afterwards is insane.<br/>Regatta is this cute, cozy cafe which gives finnish countryside vibe. It is so cosy that at most only 10 people can sit/stand inside it. And it has the smoothest, creamist hot chocolate.<br/><img src='/images/travel/helsinki.png'>"
-collection: portfolio
----
-
-The Finnish Sauna and the cutest cafe - Cafe Regatta.
-Take a guess which country has the largest number of Saunas in the world. Yeah right, finnish people are crazy about saunas. And fairly so. The sauna experience in Fin is unlike anywhere else. There is this Nordic wellness tradition where you stay in sauna for about 20 mins and then immediately go out and take a dip in the Baltic Sea, which is around 2°C. The dopamine hit afterwards is insane.
-Regatta is this cute, cozy cafe which gives finnish countryside vibe. It is so "cozy" that at most only 10 people can sit/stand inside it. And it has the smoothest, creamist hot chocolate.
